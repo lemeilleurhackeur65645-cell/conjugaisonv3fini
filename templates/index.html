@@ -193,12 +193,6 @@
     const STORAGE = 'annonce_v4_dismissed';
     const overlay = document.getElementById('annonce-overlay');
 
-    // Si déjà vu, ne pas afficher
-    if (localStorage.getItem(STORAGE) === '1') {
-      overlay.style.display = 'none';
-      return;
-    }
-
     let typed = '';
 
     document.addEventListener('keydown', function(e) {
